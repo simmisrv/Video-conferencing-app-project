@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="click.js"></script>
+<style>
+  body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("b.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:purple;
+  color: white;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.bg .btn:hover {
+  background-color:rgb(195, 135,250);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:purple;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:rgb(190, 135, 250) ;
+}
+.top-left {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  text-decoration: magenta;
+  height: 500px;
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width:600px) {
+  .column1 {
+    width: 100%;
+  }
+}
+
+/* Clearfix (clear floats) */
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column1 {
+  float: left;
+  width: 30.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a class="active" href="home.html">Home</a></li>
+</ul>
+<div class='bg'>
+  <div class="top-left">Get the best Experience with us..<br>
+    For free..assuring best Quality......<br>
+    For Bussiness meetings,teaching <br>
+    and Learning purpose.....
+
+  </div>
+  <button class="btn" onclick="func()">Getting Started</button>
+  </div>
+  
+    <div class="row"> 
+        <img src="one.jpg" style="width:100%" height="700">
+        <img src="two.jpg" style="width:100%" height="700">
+        <img src="three.jpg" style="width:100%" height="600">
+      </div>
+  <div class="about-section" style="background-color: white;">
+  <h1 style="text-align:center">About Us</h1>
+  <p  style="text-align:center">This is all about who we are and what we do.</p>
+  <p  style="text-align:center">we are working to ensure best video confrencing.<br>feature to our customer with high quality, and awesome Experience</p>
+
+</div>
+</div>
+<div class="row1">
+  <div class="column1">
+    
+    <h2>Features</h2>
+    <p> We are offering best solution to stay connected while staying anywhere with your collegues, friends,family or anyone.Teching,learning is now easy and fun  with us.</p>
+  </div>
+  
+  <div class="column1">
+    <h2>Details</h2>
+    <p>Now connect your phone ,pcs or laptop and enjoy the best experience with high quality audio and video .All we need is just a good internet connection.</p>
+  </div>
+  
+  <div class="column1">
+    <h2>Availability</h2>
+    <p>we are available for u wheneven u need us.we are giving 24 hrs support.In case of any Queries must write back to us. we are here to support you always</p>
+  </div>
+</div>
+  </body>
+  <footer></footer>
+</html>
